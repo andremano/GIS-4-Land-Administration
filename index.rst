@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to GIS 4 Land Administration's exercises
-================================================
+Welcome to GIS 4 Land Administration exercises
+==============================================
 
 .. toctree::
    :maxdepth: 3
