@@ -1,7 +1,7 @@
 Exploring QGIS
 ================
 
-.. sectnum::
+.. .. sectnum::
 
 This exercise will introduce some of the basic features of QGIS. Along the way you will also become more familiar with QGIS.
 
@@ -42,11 +42,11 @@ Exercise
 
 #. **Task** Save your QGIS project and share it with a colleague.
 
-#. **task** Open a project created by a colleague.
+#. **Task** Open a project created by a colleague.
 
-#. **task** Re-arrange one or two toolbars in a way that it is convenient.
+#. **Task** Re-arrange one or two toolbars in a way that it is convenient.
 
-#. **task** Make sure the ``Processing panel`` is visible
+#. **Task** Make sure the ``Processing panel`` is visible
 
 
 
