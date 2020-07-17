@@ -17,6 +17,8 @@ QGIS (:numref:`QGIS logo`) QGIS is a free and open source software you can downl
    :scale: 50 %
    :figclass: align-center
 
+   QGIS logo
+
 
 
 It is handy to bookmark the official `QGIS documentation <https://docs.qgis.org/testing/en/docs/user_manual//>`_.
