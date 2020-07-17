@@ -50,6 +50,7 @@ language = '[en]'
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
+#in readthedocs.org there occurs "contents.rst not found" error. The master document has to be specified to avoid that error
 master_doc = 'index'
 
 # -- Options for HTML output -------------------------------------------------

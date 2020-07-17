@@ -7,7 +7,7 @@ Welcome to GIS 4 Land Administration's exercises!
 ================================================+
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Using QGIS
 
    using_qgis
