@@ -3,12 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to GIS 4 Land Administration's documentation!
-=====================================================
+Welcome to GIS 4 Land Administration's exercises!
+================================================+
 
 .. toctree::
    :maxdepth: 2
-   :caption:
+   :caption: Using QGIS
 
    using_qgis
 
