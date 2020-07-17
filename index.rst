@@ -8,7 +8,7 @@ Welcome to GIS 4 Land Administration's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption:
 
    using_qgis
 
