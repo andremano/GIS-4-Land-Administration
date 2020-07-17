@@ -1,5 +1,5 @@
-Exploring QGIS
-==============
+Using QGIS
+==========
 
 .. .. sectnum::
 
@@ -8,13 +8,16 @@ This exercise will introduce some of the basic features of QGIS. Along the way y
 About QGIS
 ----------
 
-QGIS is a free and open source software you can download from `www.qgis.org
+QGIS (:numref:`QGIS logo`) QGIS is a free and open source software you can download from `www.qgis.org
 <http://www.qgis.org/>`_. and distribute through as many computers as you wish.
 
-.. figure:: _static/images/introduction_to_qgis/qgis_logo.png
-   :alt: qgis_logo
+.. _QGIS logo:
+.. figure:: _static/images/introduction_to_qgis/qgis_logo.*
+   :alt: QGIS logo
    :scale: 50 %
    :figclass: align-center
+
+
 
 It is handy to bookmark the official `QGIS documentation <https://docs.qgis.org/testing/en/docs/user_manual//>`_.
 

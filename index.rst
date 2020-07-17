@@ -12,6 +12,12 @@ Welcome to GIS 4 Land Administration exercises
 
    using_qgis
 
+.. toctree::
+   :maxdepth: 3
+   :caption: Vector representations
+
+   vector_representations
+
 Indices and tables
 ==================
 

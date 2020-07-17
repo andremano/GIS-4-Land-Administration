@@ -53,6 +53,12 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 #in readthedocs.org there occurs "contents.rst not found" error. The master document has to be specified to avoid that error
 master_doc = 'index'
 
+#this is to allow figure numbering and referencing
+numfig = True
+
+#numfig_format = {'figure': 'Fig. %s', 'table': 'Table %s'}
+
+
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
