@@ -1,0 +1,8 @@
+Relationship,Definition
+overlap,A and B are the same type of geometry and A is not within B
+touch,A and B intersect only at the boundary
+cross,A shares a part of its interior with the interior of B
+within,The interior of A is inside B. 
+contains,The contrary of within: if A is within B then B contains A.
+equal,A and B are equal if they occupy exactly the same space
+disjoint,A and B do not share space (do not intersect)

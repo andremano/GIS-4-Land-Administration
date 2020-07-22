@@ -4,12 +4,8 @@ Vector representations
 A common way to represent real world objects in a GIS is using a vector data model to do it.
 This exercise will introduce the basic concepts and rationale behind the vector model.
 
-.. admonition:: Resources
-
-   | For this exercise you will only need a sheet of paper and a pen/pencil. You are encouraged to work together with a colleague.
-
-Basics of the vector model
---------------------------
+The vector model
+----------------
 
 The vector model uses the most basic geometric primitive - the point, to construct more complex geometries like lines and polygons (:numref:`The vector data model`).
 Each point is defined by its X and Y coordinates in the case of 2D geometries and also a Z coordinate in the case of 3D geometries.
@@ -61,6 +57,10 @@ in the attribute table only one entry will show. One classic example are multi i
 
 Exercise
 --------
+
+.. admonition:: Resources
+
+   | For this exercise you will only need a sheet of paper and a pen/pencil. You are encouraged to work together with a colleague.
 
 Now that you are familiar with the vector data model, we invite you to abstract any real world object, man made or natural, into a vector data model.
 

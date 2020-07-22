@@ -56,8 +56,6 @@ master_doc = 'index'
 #this is to allow figure numbering and referencing
 numfig = True
 
-#numfig_format = {'figure': 'Fig. %s', 'table': 'Table %s'}
-
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -68,7 +66,32 @@ numfig = True
 html_theme = "sphinx_rtd_theme"
 
 
+###########################################################
+# Target link-files
+link_file = ['_build/assets/ltb-links-gis.rst',
+            '_build/assets/data-links-gis.rst'
+            ]
+
+# Allows storing external links in separated rst
+rst_epilog=""
+
+# Read links in the from the target files
+for file in link_file:
+    with open(file) as f:
+        rst_epilog += f.read()
+############################################################
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# Configure paper size, font size, preamble options, etc.
+latex_elements = {
+    'figure_align': 'H',
+    'preamble': '''
+        \\usepackage{float}
+        ''',
+}
+
+
