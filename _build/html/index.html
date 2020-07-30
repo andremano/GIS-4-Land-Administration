@@ -30,6 +30,7 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -84,8 +85,10 @@
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="using_qgis.html">Using QGIS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vector_representations.html">Vector representations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="spatial_reference_systems.html">Spatial Reference Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spatial_reference_systems.html">Spatial reference systems</a></li>
 <li class="toctree-l1"><a class="reference internal" href="spatial_relationships.html">Spatial relationships</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geoprocessing.html">Geoprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_quality.html">Data Quality</a></li>
 </ul>
 
             
@@ -157,29 +160,55 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="using_qgis.html">Using QGIS</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="using_qgis.html#about-qgis">About QGIS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="using_qgis.html#exercise">Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using_qgis.html#getting-started">Getting started</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="vector_representations.html">Vector representations</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="vector_representations.html#the-vector-model">The vector model</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="vector_representations.html#multipart-geometries">Multipart geometries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector_representations.html#the-vector-model">The vector model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector_representations.html#multipart-geometries">Multipart geometries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector_representations.html#abstracting-geographic-objects">Abstracting geographic objects</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="vector_representations.html#exercise">Exercise</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="spatial_reference_systems.html">Spatial Reference Systems</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="spatial_reference_systems.html">Spatial reference systems</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="spatial_reference_systems.html#reference-surfaces">Reference Surfaces</a></li>
 <li class="toctree-l2"><a class="reference internal" href="spatial_reference_systems.html#coordinate-systems">Coordinate Systems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="spatial_reference_systems.html#map-projections">Map Projections</a></li>
 <li class="toctree-l2"><a class="reference internal" href="spatial_reference_systems.html#coordinate-transformation">Coordinate Transformation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="spatial_reference_systems.html#ground-control-points">Ground control points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spatial_reference_systems.html#additional-questions">Additional questions</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="spatial_relationships.html">Spatial relationships</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="spatial_relationships.html#the-structure-of-a-geometry">The structure of a geometry</a></li>
 <li class="toctree-l2"><a class="reference internal" href="spatial_relationships.html#types-of-spatial-relationships">Types of spatial relationships</a></li>
-<li class="toctree-l2"><a class="reference internal" href="spatial_relationships.html#exercise">Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spatial_relationships.html#joins">Joins</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="geoprocessing.html">Geoprocessing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="geoprocessing.html#overlays">Overlays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geoprocessing.html#geometry-operations">Geometry operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geoprocessing.html#analysis">Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geoprocessing.html#challenge">Challenge</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data_quality.html">Data Quality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data_quality.html#accuracy">Accuracy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data_quality.html#positional-accuracy">Positional accuracy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_quality.html#attribute-accuracy">Attribute accuracy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_quality.html#biased-data">Biased data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_quality.html#data-acquisition-errors">Data Acquisition Errors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data_quality.html#conversion-operations-leading-to-quality-loss">Conversion Operations Leading to Quality Loss</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_quality.html#digitising-operations-leading-to-errors">Digitising operations leading to errors</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_quality.html#error-propagation">Error Propagation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data_quality.html#errors-generated-by-geoprocessing-routines">Errors Generated by Geoprocessing Routines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_quality.html#conceptual-errors">Conceptual errors</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_quality.html#data-management-and-metadata">Data Management and Metadata</a></li>
 </ul>
 </li>
 </ul>

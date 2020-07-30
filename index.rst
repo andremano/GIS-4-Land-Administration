@@ -13,6 +13,8 @@ Welcome to GIS 4 Land Administration exercises
    vector_representations
    spatial_reference_systems
    spatial_relationships
+   geoprocessing
+   data_quality
 
 
 Indices and tables

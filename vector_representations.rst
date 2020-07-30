@@ -42,7 +42,7 @@ Can we know more about that road? The answer to that question lies on the attrib
 
 
 Multipart geometries
-^^^^^^^^^^^^^^^^^^^^
+--------------------
 
 A special, but very common case, occurs when you have an object that is composed of two or more parts. These parts form one single object and as such
 in the attribute table only one entry will show. One classic example are multi island countries like Indonesia. Each island can be represented as a polygon, but all those polygons compose one single object (:numref:`Indonesia`).
@@ -55,8 +55,10 @@ in the attribute table only one entry will show. One classic example are multi i
 
    Indonesia
 
-Exercise
---------
+Abstracting geographic phenomena
+
+Abstracting geographic objects
+------------------------------
 
 .. admonition:: Resources
 

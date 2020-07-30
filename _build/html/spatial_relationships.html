@@ -37,7 +37,8 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Georeferencing" href="spatial_reference_systems.html" /> 
+    <link rel="next" title="Geoprocessing" href="geoprocessing.html" />
+    <link rel="prev" title="Spatial reference systems" href="spatial_reference_systems.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -85,13 +86,15 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="using_qgis.html">Using QGIS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vector_representations.html">Vector representations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="spatial_reference_systems.html">Georeferencing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spatial_reference_systems.html">Spatial reference systems</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Spatial relationships</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#the-structure-of-a-geometry">The structure of a geometry</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#types-of-spatial-relationships">Types of spatial relationships</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#exercise">Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#joins">Joins</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="geoprocessing.html">Geoprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_quality.html">Data Quality</a></li>
 </ul>
 
             
@@ -165,17 +168,17 @@ The predicates used to describe those relationships are known as <code class="do
 <h2>The structure of a geometry<a class="headerlink" href="#the-structure-of-a-geometry" title="Permalink to this headline">¶</a></h2>
 <p>In order to take full advantage of the spatial relantionships predicates, we have to understand how a geometry is stored in a GIS system
 To do that we have to understand that every geometry as an exterior, and interior and a boundary (<a class="reference internal" href="#topo-fundamentals"><span class="std std-numref">Fig. 6</span></a>). The importance of these concepts will become clearer ahead.</p>
-<div class="align-center figure align-default" id="id4">
+<div class="align-center figure align-default" id="id1">
 <span id="topo-fundamentals"></span><a class="reference internal image-reference" href="_images/topo-fundamentals.png"><img alt="vector_data_model" src="_images/topo-fundamentals.png" style="width: 667.5px; height: 205.5px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">The boundary, interior and exterior of polygons, lines and points.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">The boundary, interior and exterior of polygons, lines and points.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="types-of-spatial-relationships">
 <h2>Types of spatial relationships<a class="headerlink" href="#types-of-spatial-relationships" title="Permalink to this headline">¶</a></h2>
 <p>The most generic spatial relantionship is the <code class="docutils literal notranslate"><span class="pre">intersection</span></code>, defined as any space shared by two geometries. This means counter intuitive results like the intersection between two polygons returning a point is a possibility.
 All the other spatial relationships are specific types of intersection.</p>
-<span id="overview-of-spatial-relationships"></span><table class="colwidths-given docutils align-default" id="id5">
-<caption><span class="caption-number">Table 1 </span><span class="caption-text">Overview of spatial relationships</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<span id="overview-of-spatial-relationships"></span><table class="colwidths-given docutils align-default" id="id2">
+<caption><span class="caption-number">Table 1 </span><span class="caption-text">Overview of spatial relationships</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 22%" />
 <col style="width: 78%" />
@@ -214,9 +217,6 @@ All the other spatial relationships are specific types of intersection.</p>
 <p>Spatial relationships must not be confused with <code class="docutils literal notranslate"><span class="pre">overlay</span> <span class="pre">operations</span></code>. The former are primarily a logical test, while the latter consist of geoprocessing operations that produce a new dataset
 resulting from overlaying two datasets. This overlay may be based on a spatial relationship though.</p>
 </div>
-</div>
-<div class="section" id="exercise">
-<h2>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-resources admonition">
 <p class="admonition-title">Resources</p>
 <div class="line-block">
@@ -235,10 +235,10 @@ resulting from overlaying two datasets. This overlay may be based on a spatial r
 </ul>
 </div>
 <ol class="arabic simple">
-<li><p><strong>Task</strong> Open the QGIS project and observe the map. WITHOUT using the software, try to fill in the table below keeping in mind the definitions given in <a class="reference internal" href="#overview-of-spatial-relationships"><span class="std std-numref">Table 1</span></a>.</p></li>
+<li><p><strong>Task</strong> Open the QGIS project and observe the map. WITHOUT using the software, try to fill in <a class="reference internal" href="#spatial-relationships-outcomes"><span class="std std-numref">Table 2</span></a> keeping in mind the definitions given in <a class="reference internal" href="#overview-of-spatial-relationships"><span class="std std-numref">Table 1</span></a>.</p></li>
 </ol>
-<table class="colwidths-given docutils align-default" id="id6">
-<caption><span class="caption-number">Table 2 </span><span class="caption-text">Spatial relationships outcomes</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<span id="spatial-relationships-outcomes"></span><table class="colwidths-given docutils align-default" id="id3">
+<caption><span class="caption-number">Table 2 </span><span class="caption-text">Spatial relationships outcomes</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -278,13 +278,83 @@ resulting from overlaying two datasets. This overlay may be based on a spatial r
 </tr>
 </tbody>
 </table>
-<ol class="arabic simple">
+<ol class="arabic simple" start="2">
 <li><p><strong>Task</strong> From the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">toolbox</span></code> use the <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">by</span> <span class="pre">location</span></code> (<a class="reference internal" href="#select-by-location"><span class="std std-numref">Fig. 7</span></a>) tool to verify your answers.</p></li>
 </ol>
-<div class="align-center figure align-default" id="id7">
-<span id="select-by-location"></span><a class="reference internal image-reference" href="_images/select_by_location.png"><img alt="vector_data_model" src="_images/select_by_location.png" style="width: 353.0px; height: 361.0px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">The select by location tool</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+<div class="align-center figure align-default" id="id4">
+<span id="select-by-location"></span><a class="reference internal image-reference" href="_images/select_by_location.png"><img alt="select by location" src="_images/select_by_location.png" style="width: 353.0px; height: 361.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Select by location</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </div>
+</div>
+<div class="section" id="joins">
+<h2>Joins<a class="headerlink" href="#joins" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="line-block">
+<div class="line">For the second part of this exercise you will need to dowload <a class="reference external" href="https://canvas.utwente.nl/courses/6395/files/folder/2%20-%20Spatial_relationships?preview=1767515/">this dataset</a>. The dataset contains the following layers:</div>
+</div>
+<ul>
+<li><p><em>cadaster_dorset_subset.qgs</em> a QGIS project preloading a <em>geopackage</em> containing the following layers:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>roads</em> (road network)</p></li>
+<li><p><em>water_plan</em> (area a water management plan where special provisions may apply)</p></li>
+<li><p><em>power_cable_(plan)</em> (proposed route for a high voltage aereal cable)</p></li>
+<li><p><em>parcels</em> (the cadaster)</p></li>
+<li><p><em>land_use</em> (land uses as of 2015)</p></li>
+<li><p><em>parish</em> (admninistrative boundary of the parishes within the Dorset municipality (Tasmania))</p></li>
+<li><p><em>party</em> (fictional list of parties)</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p>Often the information we need is scattered through more that one table. when that happens we have to resort to <code class="docutils literal notranslate"><span class="pre">joins</span></code>. There are two types of joins: the <cite>join by attribute</cite> and the <code class="docutils literal notranslate"><span class="pre">join</span> <span class="pre">by</span> <span class="pre">location</span></code>.</p>
+<p>A join simply binds information together based on a common attribute. To demonstrate this idea, we will first perform a <code class="docutils literal notranslate"><span class="pre">join</span> <span class="pre">by</span> <span class="pre">attribute</span></code></p>
+<ol class="arabic simple" start="3">
+<li><p><strong>Task</strong> Go to the layer properties <code class="docutils literal notranslate"><span class="pre">parcels</span></code> layer, and under the <code class="docutils literal notranslate"><span class="pre">Joins</span></code> tab, define a join as illustrated in (<a class="reference internal" href="#join-by-attributes"><span class="std std-numref">Fig. 8</span></a>).</p></li>
+</ol>
+<div class="align-center figure align-default" id="id5">
+<span id="join-by-attributes"></span><a class="reference internal image-reference" href="_images/join_by_attributes.png"><img alt="join_by_attributes" src="_images/join_by_attributes.png" style="width: 473.5px; height: 383.5px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Join by attributes</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<p>After defining this join, if you open the attribute table of the layer <code class="docutils literal notranslate"><span class="pre">parcels</span></code>, you should observe that it now has three extra attributes (<a class="reference internal" href="#join-by-attributes-table"><span class="std std-numref">Fig. 9</span></a>).</p>
+<div class="align-center figure align-default" id="id6">
+<span id="join-by-attributes-table"></span><a class="reference internal image-reference" href="_images/join_by_attributes_table.png"><img alt="join_by_attributes_table" src="_images/join_by_attributes_table.png" style="width: 537.5px; height: 131.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Attribute table after the <em>Join by attributes</em></span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<p>Sometimes there is no common attribute that allows a direct link between datasets. When that happens, using a spatial join might be an option
+Now that you are more familiar with the types of spatial relationships, try to use <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attributes</span> <span class="pre">by</span> <span class="pre">location</span></code> tool from the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">toolbox</span></code> to perform spatial joins.</p>
+<ol class="arabic simple" start="4">
+<li><p><strong>Task</strong> Considering the spatial problems formulated in <a class="reference internal" href="#spatial-joins"><span class="std std-numref">Table 3</span></a>, complete the table with your solutions</p></li>
+</ol>
+<span id="spatial-joins"></span><table class="colwidths-given docutils align-default" id="id7">
+<caption><span class="caption-number">Table 3 </span><span class="caption-text">Spatial joins</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Problem formulation</p></th>
+<th class="head"><p>Type of spatial join</p></th>
+<th class="head"><p>Rationale</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Add to the attribute table of parcels, the parish they belong to</p></td>
+<td><p>based on ‘within’ + ‘one to many’</p></td>
+<td><p>In principle parcels will fall inside an administrative area.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Add the land use type to the attribute table of the roads</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+</tr>
+<tr class="row-even"><td><p>Add the land use type to the attribute table of the parcels</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
@@ -296,8 +366,10 @@ resulting from overlaying two datasets. This overlay may be based on a spatial r
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="geoprocessing.html" class="btn btn-neutral float-right" title="Geoprocessing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="spatial_reference_systems.html" class="btn btn-neutral float-left" title="Georeferencing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="spatial_reference_systems.html" class="btn btn-neutral float-left" title="Spatial reference systems" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

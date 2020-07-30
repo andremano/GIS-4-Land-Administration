@@ -37,7 +37,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Georeferencing" href="spatial_reference_systems.html" />
+    <link rel="next" title="Spatial reference systems" href="spatial_reference_systems.html" />
     <link rel="prev" title="Using QGIS" href="using_qgis.html" /> 
 </head>
 
@@ -86,15 +86,15 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="using_qgis.html">Using QGIS</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Vector representations</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#the-vector-model">The vector model</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#multipart-geometries">Multipart geometries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-vector-model">The vector model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#multipart-geometries">Multipart geometries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#abstracting-geographic-objects">Abstracting geographic objects</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#exercise">Exercise</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="spatial_reference_systems.html">Georeferencing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spatial_reference_systems.html">Spatial reference systems</a></li>
 <li class="toctree-l1"><a class="reference internal" href="spatial_relationships.html">Spatial relationships</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geoprocessing.html">Geoprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_quality.html">Data Quality</a></li>
 </ul>
 
             
@@ -168,15 +168,15 @@ This exercise will introduce the basic concepts and rationale behind the vector 
 <h2>The vector model<a class="headerlink" href="#the-vector-model" title="Permalink to this headline">¶</a></h2>
 <p>The vector model uses the most basic geometric primitive - the point, to construct more complex geometries like lines and polygons (<a class="reference internal" href="#the-vector-data-model"><span class="std std-numref">Fig. 2</span></a>).
 Each point is defined by its X and Y coordinates in the case of 2D geometries and also a Z coordinate in the case of 3D geometries.</p>
-<div class="align-center figure align-default" id="id4">
+<div class="align-center figure align-default" id="id1">
 <span id="the-vector-data-model"></span><a class="reference internal image-reference" href="_images/vector_data_model.png"><img alt="vector_data_model" src="_images/vector_data_model.png" style="width: 521.0px; height: 356.0px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">The vector data model</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">The vector data model</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 <p>The coordinates associated to the vector representations are anchored to a Coordinate Reference System (CRS), but this exercise is not covering CRS.
 With these geometric constructs, one can abstract real world phenomena into computer representations (<a class="reference internal" href="#abstracting-objects"><span class="std std-numref">Fig. 3</span></a>).</p>
-<div class="align-center figure align-default" id="id5">
+<div class="align-center figure align-default" id="id2">
 <span id="abstracting-objects"></span><a class="reference internal image-reference" href="_images/abstracting_objects.png"><img alt="abstracting_objects" src="_images/abstracting_objects.png" style="width: 638.0px; height: 568.0px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Abstracting objects</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Abstracting objects</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </div>
 <p>Along with the geometries, when abstracting real world objects or phenomena into a vector model, often we need to provide additional information
 as to what those geometries represent, and how they are described. This set of information is known as the <code class="docutils literal notranslate"><span class="pre">Atribute</span> <span class="pre">table</span></code>. Consider the example of the previous figure,
@@ -200,18 +200,19 @@ Can we know more about that road? The answer to that question lies on the attrib
 </tr>
 </tbody>
 </table>
+</div>
 <div class="section" id="multipart-geometries">
-<h3>Multipart geometries<a class="headerlink" href="#multipart-geometries" title="Permalink to this headline">¶</a></h3>
+<h2>Multipart geometries<a class="headerlink" href="#multipart-geometries" title="Permalink to this headline">¶</a></h2>
 <p>A special, but very common case, occurs when you have an object that is composed of two or more parts. These parts form one single object and as such
 in the attribute table only one entry will show. One classic example are multi island countries like Indonesia. Each island can be represented as a polygon, but all those polygons compose one single object (<a class="reference internal" href="#indonesia"><span class="std std-numref">Fig. 4</span></a>).</p>
-<div class="align-center figure align-default" id="id6">
+<div class="align-center figure align-default" id="id3">
 <span id="indonesia"></span><a class="reference internal image-reference" href="_images/indonesia.png"><img alt="abstracting_objects" src="_images/indonesia.png" style="width: 707.0px; height: 264.0px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Indonesia</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Indonesia</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
+<p>Abstracting geographic phenomena</p>
 </div>
-</div>
-<div class="section" id="exercise">
-<h2>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="abstracting-geographic-objects">
+<h2>Abstracting geographic objects<a class="headerlink" href="#abstracting-geographic-objects" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-resources admonition">
 <p class="admonition-title">Resources</p>
 <div class="line-block">
@@ -269,7 +270,7 @@ in the attribute table only one entry will show. One classic example are multi i
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="spatial_reference_systems.html" class="btn btn-neutral float-right" title="Georeferencing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="spatial_reference_systems.html" class="btn btn-neutral float-right" title="Spatial reference systems" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="using_qgis.html" class="btn btn-neutral float-left" title="Using QGIS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

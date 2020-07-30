@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Spatial Reference Systems &mdash; GIS for Land Administration 1 documentation</title>
+  <title>Spatial reference systems &mdash; GIS for Land Administration 1 documentation</title>
   
 
   
@@ -30,6 +30,7 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -85,15 +86,17 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="using_qgis.html">Using QGIS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vector_representations.html">Vector representations</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Spatial Reference Systems</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Spatial reference systems</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#reference-surfaces">Reference Surfaces</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#coordinate-systems">Coordinate Systems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#map-projections">Map Projections</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#coordinate-transformation">Coordinate Transformation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#ground-control-points">Ground control points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#additional-questions">Additional questions</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="spatial_relationships.html">Spatial relationships</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_quality.html">Data Quality</a></li>
 </ul>
 
             
@@ -140,7 +143,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Spatial Reference Systems</li>
+      <li>Spatial reference systems</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,7 +163,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="spatial-reference-systems">
-<h1>Spatial Reference Systems<a class="headerlink" href="#spatial-reference-systems" title="Permalink to this headline">¶</a></h1>
+<h1>Spatial reference systems<a class="headerlink" href="#spatial-reference-systems" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="reference-surfaces">
 <h2>Reference Surfaces<a class="headerlink" href="#reference-surfaces" title="Permalink to this headline">¶</a></h2>
 <p>We use a <a class="reference external" href="https://ltb.itc.utwente.nl/page/481/concept/78641">Reference surface</a> (i.e. datum system) to approximate the shape of the Earth. A horizontal datum (also called geodetic datum) is a model used to measure positions on the Earth. A <a class="reference external" href="https://ltb.itc.utwente.nl/page/481/concept/78669">Vertical datum</a> is a model used to measure elevations, which is related to the <a class="reference external" href="https://ltb.itc.utwente.nl/page/481/concept/78663">Geoid</a>. The elevations are usually related to a mean sea level, and the horizontal position is measured by using an <a class="reference external" href="https://ltb.itc.utwente.nl/page/481/concept/78640">Ellipsoid</a> as reference.</p>
@@ -168,9 +171,9 @@
 <p class="admonition-title">Attention</p>
 <p><strong>Question.</strong>
 In the Netherlands, the elevation is measured using as a reference the water level in the canals of Amsterdam. This vertical datum is called <em>Normal Amsterdams Peil (NAP)</em>. A large part of the Netherlands would flood if we would not have any dunes or dikes, see <a class="reference internal" href="#figsea-level"><span class="std std-numref">Fig. 5</span></a>. In fact, all land below 0 meters NAP would be the sea. Different countries measure height by referencing to different mean sea levels. Why do we not use one measure for all countries?</p>
-<div class="align-center figure align-default" id="id6">
+<div class="align-center figure align-default" id="id3">
 <span id="figsea-level"></span><img alt="sea level comparison" src="_images/sea-level-nl.jpg" />
-<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Left: The Netherlands compared to sea level, according to <a class="reference external" href="https://nl.wikipedia.org/wiki/Bestand:The_Netherlands_compared_to_sealevel.png">Jan Arkesteijn</a>. Right: The current coastline of the Netherlands.</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Left: The Netherlands compared to sea level, according to <a class="reference external" href="https://nl.wikipedia.org/wiki/Bestand:The_Netherlands_compared_to_sealevel.png">Jan Arkesteijn</a>. Right: The current coastline of the Netherlands.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="admonition attention">
@@ -345,6 +348,38 @@ If the Georeferencer is not visible from the raster menu, you have to go to the 
 <li><p>The quality of the georeferencing can be assessed by computing the <a class="reference external" href="https://ltb.itc.utwente.nl/page/481/concept/78541">RMSE</a>  . Do you understand how it works?</p></li>
 <li><p>What can you say about the accuracy of the transformation?</p></li>
 </ul>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="additional-questions">
+<h2>Additional questions<a class="headerlink" href="#additional-questions" title="Permalink to this headline">¶</a></h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<dl class="simple">
+<dt>Open the topographic_map_hengelo.tif of Enschede.</dt><dd><ul class="simple">
+<li><p>Is the image is georeferenced?</p></li>
+<li><p>Zoom in to the legend at the center-bottom of the screen. How many coordinate systems are available in the topographic map?</p></li>
+<li><p>Which of the three systems has a grid on the topographic map?</p></li>
+<li><p>Which of the three systems you would use as coordinate system to georeference the digital version of the map?</p></li>
+</ul>
+</dd>
+<dt>Imagine the case where you import a digital map into your GIS system and after the import you realize that the digital map has coordinates but the coordinate system is unknown.</dt><dd><ul class="simple">
+<li><p>Do you think this case is uncommon?</p></li>
+<li><p>What to do in this case? Do you have to georeference the map again or you just assign the Coordinate System in case you know it?</p></li>
+</ul>
+</dd>
+</dl>
+<p>You receive 4 projected topographic maps in paper of the same area:
+Map 1: has information on the ellipsoid, datum and projection
+Map 2: has information on the ellipsoid and datum but not projection
+Map 3: has information on ellipsoid and projection but not datum
+Map 4: has information on datum and projection but not ellipsoid</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Out of these 4 maps how many maps have enough information to build a complete spatial reference system in order to digitize correctly the topographic maps?</p></li>
+<li><p>Can a topographic map with coordinates be digitized without knowing the coordinate system?</p></li>
+</ul>
+</div></blockquote>
 </div>
 </div>
 </div>

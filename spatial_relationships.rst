@@ -30,13 +30,10 @@ All the other spatial relationships are specific types of intersection.
    :widths: 10, 35
    :header-rows: 1
 
+
 .. attention::
      Spatial relationships must not be confused with ``overlay operations``. The former are primarily a logical test, while the latter consist of geoprocessing operations that produce a new dataset
      resulting from overlaying two datasets. This overlay may be based on a spatial relationship though.
-
-
-Exercise
---------
 
 .. admonition:: Resources
 
@@ -48,19 +45,72 @@ Exercise
       - *points* (just some points)
       - *polygons* (just some polygons)
 
-#. **Task** Open the QGIS project and observe the map. WITHOUT using the software, try to fill in the table below keeping in mind the definitions given in :numref:`Overview of spatial relationships`.
+1. **Task** Open the QGIS project and observe the map. WITHOUT using the software, try to fill in :numref:`Spatial relationships outcomes` keeping in mind the definitions given in :numref:`Overview of spatial relationships`.
 
+.. _Spatial relationships outcomes:
 .. csv-table:: Spatial relationships outcomes
    :file: _static/csv/spatial_relationships_exercise.csv
    :widths: 50, 50
    :header-rows: 1
 
-#. **Task** From the ``Processing toolbox`` use the ``Select by location`` (:numref:`select_by_location`) tool to verify your answers.
+2. **Task** From the ``Processing toolbox`` use the ``Select by location`` (:numref:`select_by_location`) tool to verify your answers.
 
 .. _select_by_location:
 .. figure:: _static/images/spatial_relantionships/select_by_location.png
-   :alt: vector_data_model
+   :alt: select by location
    :scale: 50 %
    :figclass: align-center
 
-   The select by location tool
+   Select by location
+
+.. admonition:: Resources
+
+Joins
+-----
+
+   | For the second part of this exercise you will need to dowload `this dataset <https://canvas.utwente.nl/courses/6395/files/folder/2%20-%20Spatial_relationships?preview=1767515/>`_. The dataset contains the following layers:
+
+   - *cadaster_dorset_subset.qgs* a QGIS project preloading a *geopackage* containing the following layers:
+
+      - *roads* (road network)
+      - *water_plan* (area a water management plan where special provisions may apply)
+      - *power_cable_(plan)* (proposed route for a high voltage aereal cable)
+      - *parcels* (the cadaster)
+      - *land_use* (land uses as of 2015)
+      - *parish* (admninistrative boundary of the parishes within the Dorset municipality (Tasmania))
+      - *party* (fictional list of parties)
+
+Often the information we need is scattered through more that one table. when that happens we have to resort to ``joins``. There are two types of joins: the `join by attribute` and the ``join by location``.
+
+A join simply binds information together based on a common attribute. To demonstrate this idea, we will first perform a ``join by attribute``
+
+3. **Task** Go to the layer properties ``parcels`` layer, and under the ``Joins`` tab, define a join as illustrated in (:numref:`join_by_attributes`).
+
+.. _join_by_attributes:
+.. figure:: _static/images/spatial_relantionships/join_by_attributes.png
+   :alt: join_by_attributes
+   :scale: 50 %
+   :figclass: align-center
+
+   Join by attributes
+
+After defining this join, if you open the attribute table of the layer ``parcels``, you should observe that it now has three extra attributes (:numref:`join_by_attributes_table`).
+
+.. _join_by_attributes_table:
+.. figure:: _static/images/spatial_relantionships/join_by_attributes_table.png
+   :alt: join_by_attributes_table
+   :scale: 50 %
+   :figclass: align-center
+
+   Attribute table after the *Join by attributes*
+
+Sometimes there is no common attribute that allows a direct link between datasets. When that happens, using a spatial join might be an option
+Now that you are more familiar with the types of spatial relationships, try to use ``Join attributes by location`` tool from the ``Processing toolbox`` to perform spatial joins.
+
+4. **Task** Considering the spatial problems formulated in :numref:`Spatial joins`, complete the table with your solutions
+
+.. _Spatial joins:
+.. csv-table:: Spatial joins
+   :file: _static/csv/spatial_join.csv
+   :widths: 50,25,25
+   :header-rows: 1

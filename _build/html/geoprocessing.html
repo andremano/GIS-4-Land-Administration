@@ -1,0 +1,295 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="[en]" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Geoprocessing &mdash; GIS for Land Administration 1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Data Quality" href="data_quality.html" />
+    <link rel="prev" title="Spatial relationships" href="spatial_relationships.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> GIS for Land Administration
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="using_qgis.html">Using QGIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vector_representations.html">Vector representations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spatial_reference_systems.html">Spatial reference systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spatial_relationships.html">Spatial relationships</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Geoprocessing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overlays">Overlays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#geometry-operations">Geometry operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#analysis">Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#challenge">Challenge</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data_quality.html">Data Quality</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GIS for Land Administration</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Geoprocessing</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/geoprocessing.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="geoprocessing">
+<h1>Geoprocessing<a class="headerlink" href="#geoprocessing" title="Permalink to this headline">¶</a></h1>
+<p>Geoprocessing refers to methods employed to extract information and insights from an initial set of datasets. This exercise explores some of these methods.</p>
+<div class="section" id="overlays">
+<h2>Overlays<a class="headerlink" href="#overlays" title="Permalink to this headline">¶</a></h2>
+<p>Overlay analysis combines two or more datasets and applies a certain procedure for the common areas (those that intersect) and a different procedure for the non common areas (those that are disjoint).</p>
+<div class="admonition-resources admonition">
+<p class="admonition-title">Resources</p>
+<p>This exercise uses the same dataset used for the <a href="#id1"><span class="problematic" id="id2">*</span></a>Spatial relationships. If you need to download the data again just clik on <a class="reference external" href="https://canvas.utwente.nl/courses/6395/files/folder/2%20-%20Spatial_relationships?preview=1767515/">this link</a>. The dataset contains the following layers:</p>
+<ul>
+<li><p><em>cadaster_dorset_subset.qgs</em> a QGIS project preloading a <em>geopackage</em> containing the following layers:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>roads</em> (road network)</p></li>
+<li><p><em>water_plan</em> (area a water management plan where special provisions may apply)</p></li>
+<li><p><em>power_cable_(plan)</em> (proposed route for a high voltage aereal cable)</p></li>
+<li><p><em>parcels</em> (the cadaster)</p></li>
+<li><p><em>land_use</em> (land uses as of 2015)</p></li>
+<li><p><em>parish</em> (admninistrative boundary of the parishes within the Dorset municipality (Tasmania))</p></li>
+<li><p><em>party</em> (fictional list of parties)</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<ol class="arabic">
+<li><p><strong>Task</strong> From the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">toolbox</span></code>, search for tools to perform overlay operations to answer the following questions:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Extract the locations where the <code class="docutils literal notranslate"><span class="pre">roads</span></code> will be intersecting with the <code class="docutils literal notranslate"><span class="pre">power_cable_(plan)</span></code> <em>[hint: check the</em> <code class="docutils literal notranslate"><span class="pre">Line</span> <span class="pre">intersections</span></code> <em>tool]</em>;</p></li>
+<li><p>Extract the area of the <code class="docutils literal notranslate"><span class="pre">parish</span></code> that is not restricted by the <code class="docutils literal notranslate"><span class="pre">water_plan</span></code> <em>[hint: check the</em> <code class="docutils literal notranslate"><span class="pre">Difference</span></code> <em>tool]</em>;</p></li>
+<li><p>Extract the area of the <code class="docutils literal notranslate"><span class="pre">water_plan</span></code> that is not overlaps the <code class="docutils literal notranslate"><span class="pre">parish</span></code> <em>[hint: check the</em> <code class="docutils literal notranslate"><span class="pre">Difference</span> <span class="pre">tool</span></code> <em>tool]</em>;</p></li>
+<li><p>Extract the non overlapping areas of <code class="docutils literal notranslate"><span class="pre">water_plan</span></code> and <code class="docutils literal notranslate"><span class="pre">parish</span></code> <em>[hint: check the</em> <code class="docutils literal notranslate"><span class="pre">Symmetrical</span> <span class="pre">difference</span></code> <em>tool]</em>;</p></li>
+<li><p>Extract the <code class="docutils literal notranslate"><span class="pre">parcels</span></code> according with the boundary of the <code class="docutils literal notranslate"><span class="pre">water_plan</span></code> <em>[hint: check the</em> <code class="docutils literal notranslate"><span class="pre">clip</span></code> <em>tool]</em>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="geometry-operations">
+<h2>Geometry operations<a class="headerlink" href="#geometry-operations" title="Permalink to this headline">¶</a></h2>
+<p>Geometry operations usually operate on one single dataset constructing a new geometry from it.</p>
+<ol class="arabic" start="2">
+<li><p><strong>Task</strong> From the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">toolbox</span></code>, search for tools to perform geometry operations to to obtain these new layers:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Extract the areas within 25m from where the <code class="docutils literal notranslate"><span class="pre">power_cable_(plan)</span></code> <em>[hint: check the</em> <code class="docutils literal notranslate"><span class="pre">Buffer</span></code> <em>tool]</em>;</p></li>
+<li><p>Extract the all the vertices from the <code class="docutils literal notranslate"><span class="pre">parcels</span></code> <em>[hint: check the</em> <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">vertices</span></code> <em>tool]</em>;</p></li>
+<li><p>Group the <code class="docutils literal notranslate"><span class="pre">parcels</span></code> according to the type of tenure <em>[hint: check the</em> <code class="docutils literal notranslate"><span class="pre">Dissolve</span></code> <em>tool]</em>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="analysis">
+<h2>Analysis<a class="headerlink" href="#analysis" title="Permalink to this headline">¶</a></h2>
+<p>Analysis seek to produce previously unknown information from the data we have. The next task provides an example of such analysis.</p>
+<ol class="arabic" start="3">
+<li><p><strong>Task</strong> From the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">toolbox</span></code>, search for tools to perform geometry operations to to obtain these new layers:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Extract the areas within 25m from where the <code class="docutils literal notranslate"><span class="pre">power_cable_(plan)</span></code> <em>[hint: check the</em> <code class="docutils literal notranslate"><span class="pre">Buffer</span></code> <em>tool]</em>;</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="challenge">
+<h2>Challenge<a class="headerlink" href="#challenge" title="Permalink to this headline">¶</a></h2>
+<p>You can combine these tools and obtain answers to complicated problems. Read the problem formulation and try to come up with a solution using one or more of the tools you experimented so far.</p>
+<p><em>The</em> <code class="docutils literal notranslate"><span class="pre">power_cable_plan</span></code> <em>represents the proposed route for a necessary high voltage connection. It is still under discussion and as an input for that discussion you are asked to determine how much land per</em> <code class="docutils literal notranslate"><span class="pre">parcel</span></code> * would have to be expropriated given that around each post a 10m security area is required by law*</p>
+<p>[<strong>hint:</strong> you will need to use the <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">vertices</span></code>, the <code class="docutils literal notranslate"><span class="pre">Buffer</span></code> and the <code class="docutils literal notranslate"><span class="pre">Overlap</span> <span class="pre">analysis</span></code> tools.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="data_quality.html" class="btn btn-neutral float-right" title="Data Quality" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="spatial_relationships.html" class="btn btn-neutral float-left" title="Spatial relationships" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Andre Mano
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

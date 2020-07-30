@@ -1,0 +1,4 @@
+Problem formulation,Type of spatial join,Rationale
+"Add to the attribute table of parcels, the parish they belong to",based on ‘within’ + ‘one to many’,In principle parcels will fall inside an administrative area. 
+Add the land use type to the attribute table of the roads,…,…
+Add the land use type to the attribute table of the parcels,,

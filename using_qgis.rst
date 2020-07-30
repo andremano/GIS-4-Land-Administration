@@ -23,8 +23,8 @@ QGIS (:numref:`QGIS logo`) QGIS is a free and open source software you can downl
 
 It is handy to bookmark the official `QGIS documentation <https://docs.qgis.org/testing/en/docs/user_manual//>`_.
 
-Exercise
---------
+Getting started
+---------------
 
 .. admonition:: Resources
 
