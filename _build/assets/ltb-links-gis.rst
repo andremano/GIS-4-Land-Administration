@@ -40,8 +40,8 @@
 .. _Query:           	            https://ltb.itc.utwente.nl/page/481/concept/78556
 .. Querying a spatial database with SQL
 
-.. _Querying SQL:               	https://ltb.itc.utwente.nl/page/481/concept/78743
-.. _Relational data model:         	https://ltb.itc.utwente.nl/page/481/concept/78756
+.. _Querying SQL:               	https://ltb.itc.utwente.nl/page/481/concept/78743 
+.. _Relational data model:         	https://ltb.itc.utwente.nl/page/481/concept/78756 
 .. _Relation:                    	https://ltb.itc.utwente.nl/page/481/concept/78690
 .. _Tuple:                          https://ltb.itc.utwente.nl/page/481/concept/78769
 .. _Attribute:                      https://ltb.itc.utwente.nl/page/481/concept/78614
@@ -77,3 +77,29 @@
 .. _Uncertainty:                    https://ltb.itc.utwente.nl/page/481/concept/78559
 .. _Sources of errors:              https://ltb.itc.utwente.nl/page/481/concept/78561
 .. _Lineage:                        https://ltb.itc.utwente.nl/page/481/concept/78694
+.. _Vector Measurements:            https://ltb.itc.utwente.nl/page/481/concept/78810
+.. _Vector Overlay:                 https://ltb.itc.utwente.nl/page/481/concept/78811
+.. _Buffer:                         https://ltb.itc.utwente.nl/page/481/concept/78574
+.. _Thiessen Polygons:              https://ltb.itc.utwente.nl/page/481/concept/78796
+.. _Network:                        https://ltb.itc.utwente.nl/page/481/concept/78717
+.. _Network Analysis:               https://ltb.itc.utwente.nl/page/481/concept/78720
+.. _Optimal Path Finding:           https://ltb.itc.utwente.nl/page/481/concept/78729
+.. _Network Allocation:             https://ltb.itc.utwente.nl/page/481/concept/78719
+.. _Network Partitioning:           https://ltb.itc.utwente.nl/page/481/concept/78721
+.. _Trace analysis:                 https://ltb.itc.utwente.nl/page/481/concept/78842
+
+.. _Reclassification:               https://ltb.itc.utwente.nl/page/481/concept/78748
+.. _Automatic reclassification:     https://ltb.itc.utwente.nl/page/481/concept/78562
+.. _User controlled classification: https://ltb.itc.utwente.nl/page/481/concept/78809
+
+.. _Raster Overlay: https://ltb.itc.utwente.nl/page/481/concept/78747
+.. _Overlay Analysis: https://ltb.itc.utwente.nl/page/481/concept/78733
+
+.. _Raster Measurements: https://ltb.itc.utwente.nl/page/481/concept/78746
+.. _Diffusion: https://ltb.itc.utwente.nl/page/481/concept/78843
+.. _Flow: https://ltb.itc.utwente.nl/page/481/concept/78844
+.. _Surface Analysis: https://ltb.itc.utwente.nl/page/481/concept/78579
+
+.. _Visualization: https://ltb.itc.utwente.nl/page/481/concept/78703
+.. _Map: https://ltb.itc.utwente.nl/page/481/concept/78701
+

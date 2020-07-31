@@ -8,6 +8,7 @@ Welcome to GIS 4 Land Administration exercises
 
 .. toctree::
    :maxdepth: 3
+   :caption: Topics
 
    using_qgis
    vector_representations
@@ -15,7 +16,14 @@ Welcome to GIS 4 Land Administration exercises
    spatial_relationships
    geoprocessing
    data_quality
+   data_entry
+   data_entry_routines
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Appendices
+
+   gis-formats
 
 Indices and tables
 ==================

@@ -1,0 +1,333 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="[en]" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Common GIS file formats &mdash; GIS for Land Administration 1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Data entry routines" href="data_entry_routines.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> GIS for Land Administration
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Topics</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="using_qgis.html">Using QGIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vector_representations.html">Vector representations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spatial_reference_systems.html">Spatial reference systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spatial_relationships.html">Spatial relationships</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geoprocessing.html">Geoprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_quality.html">Data Quality</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_entry.html">Data Entry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_entry_routines.html">Data entry routines</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Common GIS file formats</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#vector-gis-file-extensions">Vector GIS file extensions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#shapefiles-shp"><em>Shapefiles (.shp)</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geopackage-gpkg"><em>Geopackage (.gpkg)</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#keyhole-markup-language-kml"><em>Keyhole Markup Language (.kml)</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gps-exchange-format-gpx"><em>GPS eXchange Format (.gpx)</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comma-separated-values-csv"><em>Comma Separated Values (.csv)</em></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#raster-gis-file-extensions">Raster GIS file extensions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tagged-image-file-format-tif"><em>Tagged Image File Format (.tif)</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#other-raster-and-vector-formats"><em>Other raster and vector formats</em></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Appendices</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Common GIS file formats</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#vector-gis-file-extensions">Vector GIS file extensions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#shapefiles-shp"><em>Shapefiles (.shp)</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geopackage-gpkg"><em>Geopackage (.gpkg)</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#keyhole-markup-language-kml"><em>Keyhole Markup Language (.kml)</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gps-exchange-format-gpx"><em>GPS eXchange Format (.gpx)</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comma-separated-values-csv"><em>Comma Separated Values (.csv)</em></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#raster-gis-file-extensions">Raster GIS file extensions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tagged-image-file-format-tif"><em>Tagged Image File Format (.tif)</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#other-raster-and-vector-formats"><em>Other raster and vector formats</em></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GIS for Land Administration</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Common GIS file formats</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/gis-formats.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="common-gis-file-formats">
+<span id="gis-formats"></span><h1>Common GIS file formats<a class="headerlink" href="#common-gis-file-formats" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="vector-gis-file-extensions">
+<h2>Vector GIS file extensions<a class="headerlink" href="#vector-gis-file-extensions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="shapefiles-shp">
+<h3><em>Shapefiles (.shp)</em><a class="headerlink" href="#shapefiles-shp" title="Permalink to this headline">¶</a></h3>
+<p>The most common file type amongst vector data is the Shapefile (.shp). It is maintained by ESRI and because its specification is public, shapefiles have become a de facto standard towards spatial information storage. Most of the time you will be working with shapefiles, therefore it’s important to understand what exactly are they.</p>
+<p>The shapefile is in fact a collection of files and not a single file. Some of these files are mandatory, others are optional. The first thing you have to remember is that for shapefiles to work properly all mandatory files have to be in the same directory and share the same name (only the extension changes). Remember this when copying shapefiles from one folder to another – ALL the files with the same name are components of a given shapefile and therefore have to be together for the shapefile to work properly.</p>
+<img alt="_images/shapefile.png" class="align-center" src="_images/shapefile.png" />
+<p></p>
+<p>When you create a new shapefile, your GIS software will automatically create all or at least the mandatory components of a shapefile (the following is based on Wikipedia entrance on the shapefile format):</p>
+<dl class="simple">
+<dt>Mandatory files:</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">.shp</span></code> — shape format; the feature geometry itself</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.shx</span></code> — shape index format; a positional index of the feature geometry</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.dbf</span></code> — attribute format; columnar attributes for each shape, in dBase IV format</p></li>
+</ul>
+</dd>
+<dt>Optional files (most common):</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">.prj</span></code> — projection format; the coordinate system and projection information.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.sbn</span></code> and <code class="docutils literal notranslate"><span class="pre">.sbx</span></code> — a spatial index of the features.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.cpg</span></code> — for identifying the character encoding to be used.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Another important characteristic of the shapefile is that it only supports one type of geometry for shapefile and the possibilities are point, line or polygon. That is to say that if you have a shapefile with polygons representing, say houses, you cannot have features represented by a line or by a point.</p>
+</div>
+<div class="section" id="geopackage-gpkg">
+<h3><em>Geopackage (.gpkg)</em><a class="headerlink" href="#geopackage-gpkg" title="Permalink to this headline">¶</a></h3>
+<p>Geopackage is essentially a mini database in the form of one single file. It can contain several layers of different geometries, and also raster layers. In addition to that it offers some of the capabilities of databases like relantionships, advanced constraints and triggers. It is a format based on an open standard maintained by the <a class="reference external" href="https://en.wikipedia.org/wiki/Open_Geospatial_Consortium">Open Geopspatial Consortium</a> (OGC).</p>
+<p>Currently, this is the default vector format of QGIS and it is the vector format we will use during the course. Because of the advantages it offers in comparison with shapefiles, it is possible that geopackage will become as common as shapefiles.</p>
+</div>
+<div class="section" id="keyhole-markup-language-kml">
+<h3><em>Keyhole Markup Language (.kml)</em><a class="headerlink" href="#keyhole-markup-language-kml" title="Permalink to this headline">¶</a></h3>
+<p>KML is a XML file that was originally developed for use within Google Earth back in 2004. In 2008, it became an Official Open Geospatial Consortium Standard (OGC), and since then it became a widely adopted format especially for use with Google Earth and web mapping applications.</p>
+<p>KML allows to store more than one geometry per file, and even rasters if we use the compressed version of it – KMZ. Contrary to shapefiles, a KML file is composed of only one file, but on the other hand the alphanumeric information associated to the geometries (i.g.  the attribute table) is not as easy to manage as in the case of shapefiles.</p>
+</div>
+<div class="section" id="gps-exchange-format-gpx">
+<h3><em>GPS eXchange Format (.gpx)</em><a class="headerlink" href="#gps-exchange-format-gpx" title="Permalink to this headline">¶</a></h3>
+<p>Another common GIS data format is the GPS eXchange Format (.gpx), also an XML schema designed specifically for exchange data between GPS devices. Due to the increasing popularity and availability of GPS devices, GPX format became a very common format. Although not an official standard, due to its wide adoption to carry GPS log data, this format became a de facto standard. The latest specification is 1.1 and it was released in 2004.</p>
+<p>GPX has two particularities. The first is that it only stores points and lines and with these geometries you can have waypoints, routes, route points, tracks and track points. The second is that the attribute table associated to the features has a fixed structure, determined by the XML schema that describes the GPX format.</p>
+</div>
+<div class="section" id="comma-separated-values-csv">
+<h3><em>Comma Separated Values (.csv)</em><a class="headerlink" href="#comma-separated-values-csv" title="Permalink to this headline">¶</a></h3>
+<p>Comma Separated values (.csv) is not a format specific to GIS but rather a general purpose format that allows to carry data in tabular format using commas or other pre-defined separator like semi-colon or Tab to delimitate columns. If you open the file educational_facilities.csv in a text editor (do not use Word or similar programs) this is what you will see:</p>
+<img alt="_images/csv.png" class="align-center" src="_images/csv.png" />
+<p>The first line is called the ‘header’ of the CSV and it is the equivalent to column names in a regular table. The following lines represent different rows just like you would see in a regular excel-like table.</p>
+</div>
+</div>
+<div class="section" id="raster-gis-file-extensions">
+<h2>Raster GIS file extensions<a class="headerlink" href="#raster-gis-file-extensions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="tagged-image-file-format-tif">
+<h3><em>Tagged Image File Format (.tif)</em><a class="headerlink" href="#tagged-image-file-format-tif" title="Permalink to this headline">¶</a></h3>
+<p>Although not the most efficient, Tagged Image File Format (<code class="docutils literal notranslate"><span class="pre">.tif</span></code>), is one of the most widespread raster formats. The TIFF specification is public and therefore largely supported by every software package. The latest version was released in 1992 and maintained by Adobe. What makes TIFF so popular to distribute GIS data is its flexibility. It is not in the scope of this exercise to cover technical details, but here is quick overview of TIFF capabilities:</p>
+<ul class="simple">
+<li><p>Supports 8 to 16 bit (1 or 2 bytes) colour range per band, meaning a range of values of 0 to 255 or 0 to 32768 respectively;</p></li>
+<li><p>In a multi-band raster, the above capability allows TIFF to store a range of values that stretches to the millions.</p></li>
+<li><p>Allows negative and decimal values.</p></li>
+<li><p>Supports loss and lossless compression.</p></li>
+<li><p>Can store tags with alphanumeric information.</p></li>
+<li><p>The tags can be used to store georeferencing information. When that happens the TIFF is called GeoTIFF.</p></li>
+</ul>
+</div>
+<div class="section" id="other-raster-and-vector-formats">
+<h3><em>Other raster and vector formats</em><a class="headerlink" href="#other-raster-and-vector-formats" title="Permalink to this headline">¶</a></h3>
+<p>The list of GIS formats is very extensive. The formats we covered so far are the ones that you are more likely to encounter. In the case of QGIS, the complete list of supported formats depends on the formats supported by the GDAL library. You can check the complete list of supported formats in the links below:</p>
+<ul class="simple">
+<li><p>Raster formats - <a class="reference external" href="http://www.gdal.org/formats_list.html">http://www.gdal.org/formats_list.html</a></p></li>
+<li><p>Vector formats - <a class="reference external" href="http://www.gdal.org/ogr_formats.html">http://www.gdal.org/ogr_formats.html</a></p></li>
+</ul>
+<p>In addition there are closed proprietary formats that are also fairly common, however because they are closed they do not ensure data interoperability. If you come across these formats you might need a special license to read them or convert them to one of the GDAL supported formats. The most important formats among these include:</p>
+<ul class="simple">
+<li><p>DGW (drawing) – a proprietary vector format native of AutoCAD</p></li>
+<li><p>.MrSID (Multiresolution Seamless Image Database) – a proprietary raster format owned by LizTech, possibly the most efficient format to store raster data;</p></li>
+<li><p>ECW (Enhanced Compression Wavelet) – another proprietary format for rasters developed by Hexagon Geospatial.</p></li>
+</ul>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p><strong>Do not overload yourself in knowing all these formats and their details.</strong> The main point here is to understand that different file formats provide different possibilities. Whenever you come across a data format you are not familiar with, do a little research on it to know if that format is adequate for your analysis needs.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="data_entry_routines.html" class="btn btn-neutral float-left" title="Data entry routines" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Andre Mano
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
