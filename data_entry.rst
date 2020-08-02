@@ -15,7 +15,7 @@ Although spatial data can be acquired from third-party sources like government a
 
 .. important::
    **Resources.**
-   You will require this `dataset <https://canvas.utwente.nl/courses/6395/files/folder/7_data_entry?preview=1770787/>`_ which you can download from CANVAS.  When you unzip the dataset, you will find the following files inside:
+   You will require this `dataset <https://canvas.utwente.nl/courses/6395/files/1770787/download?download_frd=1/>`_ which you can download from CANVAS.  When you unzip the dataset, you will find the following files inside:
 
    + ``data_entry.qgs`` – a QGIS project file;
    + ``checking_errors.qgs`` – a QGIS project file;

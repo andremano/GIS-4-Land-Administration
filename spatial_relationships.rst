@@ -39,7 +39,7 @@ All the other spatial relationships are specific types of intersection.
 
    | For this exercise you will need this `dataset <https://canvas.utwente.nl/files/1758642/download?download_frd=1/>`_. The dataset contains the following layers:
 
-   - *spatial_relationships.qgs* a QGIS project preloading a *geopackage* containing the following layers:
+   - *spatial_relationships.qgz* a QGIS project preloading a *geopackage* containing the following layers:
 
       - *lines* (just some lines)
       - *points* (just some points)
@@ -68,17 +68,25 @@ All the other spatial relationships are specific types of intersection.
 Joins
 -----
 
-   | For the second part of this exercise you will need to dowload `this dataset <https://canvas.utwente.nl/courses/6395/files/folder/2%20-%20Spatial_relationships?preview=1767515/>`_. The dataset contains the following layers:
+.. admonition:: Resources
 
-   - *cadaster_dorset_subset.qgs* a QGIS project preloading a *geopackage* containing the following layers:
+   For this exercise you need to download `this dataset <https://canvas.utwente.nl/courses/6395/files/1773079/download?download_frd=1/>`_. The dataset contains the following layers:
+
+   - *dorset_cadaster.qgz* a QGIS project preloading a *geopackage* containing the following layers:
 
       - *roads* (road network)
       - *water_plan* (area a water management plan where special provisions may apply)
       - *power_cable_(plan)* (proposed route for a high voltage aereal cable)
       - *parcels* (the cadaster)
       - *land_use* (land uses as of 2015)
-      - *parish* (admninistrative boundary of the parishes within the Dorset municipality (Tasmania))
+      - *parish* (admninistrative boundary of the parishes within the Dorset municipality - Tasmania)
       - *party* (fictional list of parties)
+      - *building* (empty layer of type polygon)
+      - *topographic_map* (a sample topographic map generated from Open Street Map)
+      - *building_type* (fictional list of types of buildings)
+
+    In additon to the project and respective datasets, there are also folders with auxiliary files the exercise may refer to.
+
 
 Often the information we need is scattered through more that one table. when that happens we have to resort to ``joins``. There are two types of joins: the `join by attribute` and the ``join by location``.
 

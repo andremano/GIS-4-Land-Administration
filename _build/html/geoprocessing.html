@@ -83,7 +83,8 @@
               
             
             
-              <ul class="current">
+              <p class="caption"><span class="caption-text">Topics</span></p>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="using_qgis.html">Using QGIS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vector_representations.html">Vector representations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="spatial_reference_systems.html">Spatial reference systems</a></li>
@@ -96,6 +97,13 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="data_quality.html">Data Quality</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_entry.html">Data Entry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_entry_routines.html">Data entry routines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cartographic_outputs.html">Cartographic outputs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gis-formats.html">Common GIS file formats</a></li>
 </ul>
 
             
@@ -169,9 +177,9 @@
 <p>Overlay analysis combines two or more datasets and applies a certain procedure for the common areas (those that intersect) and a different procedure for the non common areas (those that are disjoint).</p>
 <div class="admonition-resources admonition">
 <p class="admonition-title">Resources</p>
-<p>This exercise uses the same dataset used for the <a href="#id1"><span class="problematic" id="id2">*</span></a>Spatial relationships. If you need to download the data again just clik on <a class="reference external" href="https://canvas.utwente.nl/courses/6395/files/folder/2%20-%20Spatial_relationships?preview=1767515/">this link</a>. The dataset contains the following layers:</p>
+<p>This exercise uses the same dataset used for the <a href="#id1"><span class="problematic" id="id2">*</span></a>Spatial relationships. If you need to download the data again just clik on <a class="reference external" href="https://canvas.utwente.nl/courses/6395/files/1773079/download?download_frd=1/">this link</a>. The dataset contains the following layers:</p>
 <ul>
-<li><p><em>cadaster_dorset_subset.qgs</em> a QGIS project preloading a <em>geopackage</em> containing the following layers:</p>
+<li><p><em>dorset_cadaster.qgz</em> a QGIS project preloading a <em>geopackage</em> containing the following layers:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><em>roads</em> (road network)</p></li>
@@ -179,12 +187,18 @@
 <li><p><em>power_cable_(plan)</em> (proposed route for a high voltage aereal cable)</p></li>
 <li><p><em>parcels</em> (the cadaster)</p></li>
 <li><p><em>land_use</em> (land uses as of 2015)</p></li>
-<li><p><em>parish</em> (admninistrative boundary of the parishes within the Dorset municipality (Tasmania))</p></li>
+<li><p><em>parish</em> (admninistrative boundary of the parishes within the Dorset municipality - Tasmania)</p></li>
 <li><p><em>party</em> (fictional list of parties)</p></li>
+<li><p><em>building</em> (empty layer of type polygon)</p></li>
+<li><p><em>topographic_map</em> (a sample topographic map generated from Open Street Map)</p></li>
+<li><p><em>building_type</em> (fictional list of types of buildings)</p></li>
 </ul>
 </div></blockquote>
 </li>
 </ul>
+<blockquote>
+<div><p>In additon to the project and respective datasets, there are also folders with auxiliary files the exercise may refer to.</p>
+</div></blockquote>
 </div>
 <ol class="arabic">
 <li><p><strong>Task</strong> From the <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">toolbox</span></code>, search for tools to perform overlay operations to answer the following questions:</p>

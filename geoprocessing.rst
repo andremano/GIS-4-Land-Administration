@@ -10,17 +10,23 @@ Overlay analysis combines two or more datasets and applies a certain procedure f
 
 .. admonition:: Resources
 
-   This exercise uses the same dataset used for the *Spatial relationships. If you need to download the data again just clik on `this link <https://canvas.utwente.nl/courses/6395/files/folder/2%20-%20Spatial_relationships?preview=1767515/>`_. The dataset contains the following layers:
+   This exercise uses the same dataset used for the *Spatial relationships. If you need to download the data again just clik on `this link <https://canvas.utwente.nl/courses/6395/files/1773079/download?download_frd=1/>`_. The dataset contains the following layers:
 
-   - *cadaster_dorset_subset.qgs* a QGIS project preloading a *geopackage* containing the following layers:
+   - *dorset_cadaster.qgz* a QGIS project preloading a *geopackage* containing the following layers:
 
       - *roads* (road network)
       - *water_plan* (area a water management plan where special provisions may apply)
       - *power_cable_(plan)* (proposed route for a high voltage aereal cable)
       - *parcels* (the cadaster)
       - *land_use* (land uses as of 2015)
-      - *parish* (admninistrative boundary of the parishes within the Dorset municipality (Tasmania))
+      - *parish* (admninistrative boundary of the parishes within the Dorset municipality - Tasmania)
       - *party* (fictional list of parties)
+      - *building* (empty layer of type polygon)
+      - *topographic_map* (a sample topographic map generated from Open Street Map)
+      - *building_type* (fictional list of types of buildings)
+
+    In additon to the project and respective datasets, there are also folders with auxiliary files the exercise may refer to.
+
 
 1. **Task** From the ``Processing toolbox``, search for tools to perform overlay operations to answer the following questions:
 
