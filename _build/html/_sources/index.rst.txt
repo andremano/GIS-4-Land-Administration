@@ -18,6 +18,7 @@ Welcome to GIS 4 Land Administration exercises
    data_quality
    data_entry
    data_entry_routines
+   cartographic_outputs
 
 .. toctree::
    :maxdepth: 2
