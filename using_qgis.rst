@@ -28,7 +28,7 @@ Getting started
 
 .. admonition:: Resources
 
-   | For this exercise you will need this `dataset <https://canvas.utwente.nl/files/1756885/download?download_frd=1/>`_. The dataset contains the following layers:
+   | For this exercise you will need this `dataset <https://canvas.utwente.nl/courses/6395/files/1773829/download?download_frd=1/>`_. The dataset contains the following layers:
 
    - *admin_regions.gpkg* (vector layer containing the administrative regions of Guyana)
    - *rivers.gpkg* (vector layer containing the main rivers of Guyana)
