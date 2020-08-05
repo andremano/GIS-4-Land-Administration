@@ -30,9 +30,10 @@ Getting started
 
    | For this exercise you will need this `dataset <https://canvas.utwente.nl/courses/6395/files/1773829/download?download_frd=1/>`_. The dataset contains the following layers:
 
-   - *admin_regions.gpkg* (vector layer containing the administrative regions of Guyana)
-   - *rivers.gpkg* (vector layer containing the main rivers of Guyana)
-   - *roads.gpkg* (vector layer containing the main roads of Guyana)
+   - *power_cables.gpkg* (vector layer containing the power lines of Addis Ababa)
+   - *residential_areas.gpkg* (vector layer containing residential areas of Addis Ababa)
+   - *rivers.gpkg* (vector layer containing the main water lines of Addis Ababa)
+   - *main_roads.gpkg* (vector layer containing the main roads of Addis Ababa)
 
 
 #. **Task** Start QGIS and add the three layers
@@ -41,7 +42,7 @@ Getting started
 
 #. **Task** In the ``Layer's panel`` create two groups (i.e. folders): one called *artifitial* and another one called *natural*
 
-#. **Task** Drag the *admin_regions* and *roads* into the group *artificial* and the rivers layer into the group *natural*.
+#. **Task** Drag the *residential_areas*, *power_cables* and *main_roads* into the group *artificial* and the rivers layer into the group *natural*.
 
 #. **Task** Re-order the groups and the layers inside in such a way that all the layers are visible.
 
