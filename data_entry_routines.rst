@@ -92,7 +92,7 @@ Clearly, this is not convenient at all. In order to make the data entry more eff
 
 .. _widget_example:
 .. figure:: _static/images/data_entry_routines/widget_example.png
-   :alt: attributes form
+   :alt: widget example
    :figclass: align-center
 
    Widget definition example
