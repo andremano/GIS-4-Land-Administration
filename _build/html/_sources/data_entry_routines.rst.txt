@@ -200,7 +200,7 @@ In the example we will explore, this workflow consists of
 ``Fix geometry`` >
 ``> FINAL OUTPUT``
 
-This succession of steps is tedious and time consuming, especially if it is a recurrent task. A better way to do it is to build a `Model` (or workflow) in QGIS that chains this steps into one single operation :numref:`import_survey_model` that can even be executed as a *batch process* if needed.
+This succession of steps is tedious and time consuming, especially if it is a recurrent task. A better way to do it is to build a `Model` (or workflow) in QGIS that chains these steps into one single operation :numref:`import_survey_model` that can even be executed as a *batch process* if needed.
 
 .. _import_survey_model:
 .. figure:: _static/images/data_entry_routines/import_survey_model.png
@@ -209,7 +209,7 @@ This succession of steps is tedious and time consuming, especially if it is a re
 
    Model to import survey data in CSV format
 
-Along with the data for this exercise you have a folder named ``surveys``. Inside you will see 30 CSV files similat to the one shown in :numref:`t_survey_1`, each representing a different topographic survey (i.e. different parcel). We will now use these files to demonstrate how a possible approach to build workflow to import external data.
+Along with the data for this exercise you have a folder named ``surveys``. Inside you will see 30 CSV files similar to the one shown in :numref:`t_survey_1`, each representing a different topographic survey (i.e. different parcel). We will use those files to demonstrate a possible approach to build a workflow to import external data.
 
 7. **Task** Import the model ``import_surveys.model3`` into your collection of processing tools :numref:`add_model` you will find this file inside the ``models`` folder.
 
@@ -229,10 +229,7 @@ Along with the data for this exercise you have a folder named ``surveys``. Insid
 
    Starting a Batch Process
 
-9. **Task** From the ``Processing Toolbox``, filter by ``import survey``. *right-click* on it and choose ``Exectute as Batch Process`` :numref:`execute_batch_process`.
-
-
-10. **Task** Provide the necessary parameters to execute the batch operation. Check the video below to see how it is done
+9. **Task** Provide the necessary parameters to execute the batch operation. Check the video below to see how it is done
 
 .. raw:: html
 
