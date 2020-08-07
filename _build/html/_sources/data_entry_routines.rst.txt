@@ -88,7 +88,6 @@ Clearly, this is not convenient at all. In order to make the data entry more eff
 
    The ``Attributes form`` tab
 
-
 3. **Task** Define your first widget on field ``fid``. The widget type will be ``Hidden`` :numref:`widget_example`.
 
 .. _widget_example:
@@ -140,7 +139,7 @@ In our case we are interested in defining what the default value for a given fie
       filter:=intersects($geometry, geometry(@parent)))
 
 
-   as the ``Default value`` and make sure the option ``Apply default value on update`` is checked :numref:`expression_example`.
+as the ``Default value`` and make sure the option ``Apply default value on update`` is checked :numref:`expression_example`.
 
 .. _expression_example:
 .. figure:: _static/images/data_entry_routines/expression_example.png
