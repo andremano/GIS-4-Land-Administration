@@ -129,7 +129,7 @@ In our case we are interested in defining what the default value for a given fie
 
 5. **Task** Define your first default expression on field ``land_use``. Enter this expression:
 
-   .. code-block::
+   .. code-block:: text
 
       aggregate(
       layer:= 'land_use',

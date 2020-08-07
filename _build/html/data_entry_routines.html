@@ -332,7 +332,7 @@ From the data model we can have an overview of the constraints that have to be e
 <p>In our case we are interested in defining what the default value for a given field is. This default value can be the output of an expression.</p>
 <ol class="arabic" start="5">
 <li><p><strong>Task</strong> Define your first default expression on field <code class="docutils literal notranslate"><span class="pre">land_use</span></code>. Enter this expression:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>aggregate(
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>aggregate(
 layer:= &#39;land_use&#39;,
 aggregate:=&#39;concatenate&#39;,
 expression:= LU_DESCRIP,
