@@ -175,7 +175,7 @@ Those fields are ``allowed use``, ``official``, ``registered``, ``street``, ``pe
 
    Data entry interface after hiding autofill fields
 
-workflows
+Workflows
 =========
 
 Another type of data entry routine is related with importing from external sources. These sources often take form of a topographic survey where each surveyed point is stored in a table or CSV file.
