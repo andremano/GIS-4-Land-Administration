@@ -6,7 +6,7 @@ This exercise will introduce you to the basic concepts of behind the ``Print lay
 
 .. admonition:: Resources
 
-   This exercise uses the same dataset used for the *Spatial relationships. If you need to download the data again just clik on `this link <https://github.com/andremano/GIS-4-Land-Administration/blob/master/_static/datasets/dorset_cadaster.zip/>`_. The dataset contains the following layers:
+   This exercise uses the same dataset used for the *Spatial relationships. If you need to download the data again just clik on `this link <https://github.com/andremano/GIS-4-Land-Administration/raw/master/_static/datasets/dorset_cadaster.zip/>`_. The dataset contains the following layers:
 
    - *dorset_cadaster.qgz* a QGIS project preloading a *geopackage* containing the following layers:
 
@@ -191,7 +191,7 @@ Just keep in mind that the export buttons are different depending on if you are 
 
 .. _exporting_maps:
 .. figure:: _static/images/print_layouts/exporting_maps.jpg
-   :alt: exporting_maps
+   :alt: _exporting_maps
    :figclass: align-center
 
    Print and export options

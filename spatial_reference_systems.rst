@@ -91,7 +91,7 @@ No matter which map projection you choose, it always comes with certain distorti
 
 .. important::
    **Resources.**
-   You will require the latest LTR version of `QGIS (A Coruna 3.10) <https://qgis.org/en/site/forusers/download.html>`_, plus the dataset `spatial reference systems <https://canvas.utwente.nl/courses/6395/files/1774284/download?download_frd=1/>`_ which you can download from CANVAS.  When you unzip the dataset, you will find the following files inside:
+   You will require the latest LTR version of `QGIS (A Coruna 3.10) <https://qgis.org/en/site/forusers/download.html>`_, plus the dataset `spatial reference systems <https://github.com/andremano/GIS-4-Land-Administration/raw/master/_static/datasets/spatial_reference_systems.zip/>`_ which you can download from CANVAS.  When you unzip the dataset, you will find the following files inside:
 
    + ``DEM10.tif`` (and auxiliary files) – a digital elevation model in raster format;
    + ``Topographical_map_dominica.tif`` – a (ungeoreferenced) raster map;

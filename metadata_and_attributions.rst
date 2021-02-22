@@ -10,5 +10,4 @@ License
 -------
 
 ..raw:: html
-
   :file: _/static/cc_license.html

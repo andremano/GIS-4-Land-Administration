@@ -15,7 +15,7 @@ Although spatial data can be acquired from third-party sources like government a
 
 .. important::
    **Resources.**
-   You will require this `dataset <https://github.com/andremano/GIS-4-Land-Administration/blob/master/_static/datasets/data_entry.zip/>`_ which you can download from CANVAS.  When you unzip the dataset, you will find the following files inside:
+   You will require this `dataset <https://github.com/andremano/GIS-4-Land-Administration/raw/master/_static/datasets/data_entry.zip/>`_ which you can download from CANVAS.  When you unzip the dataset, you will find the following files inside:
 
    + ``data_entry.qgs`` – a QGIS project file;
    + ``checking_errors.qgs`` – a QGIS project file;

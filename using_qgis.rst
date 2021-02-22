@@ -28,7 +28,7 @@ Getting started
 
 .. admonition:: Resources
 
-   | For this exercise you will need this `dataset <https://github.com/andremano/GIS-4-Land-Administration/blob/master/_static/datasets/using_qgis.zip/>`_. The dataset contains the following layers:
+   | For this exercise you will need this `dataset <https://github.com/andremano/GIS-4-Land-Administration/raw/master/_static/datasets/using_qgis.zip/>`_. The dataset contains the following layers:
 
    - *power_cables.gpkg* (vector layer containing the power lines of Addis Ababa)
    - *residential_areas.gpkg* (vector layer containing residential areas of Addis Ababa)

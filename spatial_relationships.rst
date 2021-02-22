@@ -37,7 +37,7 @@ All the other spatial relationships are specific types of intersection.
 
 .. admonition:: Resources
 
-   | For this exercise you will need this `dataset <https://github.com/andremano/GIS-4-Land-Administration/blob/master/_static/datasets/spatial_relationships.zip/>`_. The dataset contains the following layers:
+   | For this exercise you will need this `dataset <https://github.com/andremano/GIS-4-Land-Administration/raw/master/_static/datasets/spatial_relationships.zip/>`_. The dataset contains the following layers:
 
    - *spatial_relationships.qgz* a QGIS project preloading a *geopackage* containing the following layers:
 

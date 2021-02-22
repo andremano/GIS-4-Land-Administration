@@ -10,7 +10,7 @@ The main goal of this exercise is to provide you with the first-hand experience 
 
 .. important::
    **Resources.**
-   You will require the latest LTR version of `QGIS (A Coruna 3.10) <https://qgis.org/en/site/forusers/download.html>`_, plus `this dataset <https://github.com/andremano/GIS-4-Land-Administration/blob/master/_static/datasets/data_quality.zip/>`_ which you can download from CANVAS.  For this section, you will need the following files:
+   You will require the latest LTR version of `QGIS (A Coruna 3.10) <https://qgis.org/en/site/forusers/download.html>`_, plus `this dataset <https://github.com/andremano/GIS-4-Land-Administration/raw/master/_static/datasets/data_quality.zip/>`_ which you can download from CANVAS.  For this section, you will need the following files:
 
     + ``accuracy.qgs`` – a QGIS project preloaded with the datasets described below;
     + ``geodesic_marks.gpgk`` – peaks signaled by geodetic marks;
