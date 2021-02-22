@@ -12,5 +12,4 @@ License
 All Data is Copyright © State of Tasmania. Data is supplied under
 
 .. raw:: html
-
-    src="_static/cc_license.html"
+   :file: _static/cc_license.html
