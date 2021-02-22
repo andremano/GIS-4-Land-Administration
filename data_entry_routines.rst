@@ -3,7 +3,7 @@ Data entry routines
 
 .. admonition:: Resources
 
-   This exercise uses the same dataset used for the *Spatial relationships. If you need to download the data again just clik on `this link <https://canvas.utwente.nl/courses/6395/files/1773079/download?download_frd=1/>`_. The dataset contains the following layers:
+   This exercise uses the same dataset used for the *Spatial relationships. If you need to download the data again just clik on `this link <https://github.com/andremano/GIS-4-Land-Administration/blob/master/_static/datasets/dorset_cadaster.zip/>`_. The dataset contains the following layers:
 
    - *dorset_cadaster.qgz* a QGIS project preloading a *geopackage* containing the following layers:
 
