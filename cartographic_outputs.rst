@@ -189,7 +189,6 @@ Printing and exporting
 You can print and/or export a single map or the full Atlas to one of these formats: **PDF**, **Image (.png, .jpg, etc)** or **SVG**.
 Just keep in mind that the export buttons are different depending on if you are exporting a single map or a full atlas :numref:`exporting_maps`
 
-
 .. _exporting_maps:
 .. figure:: _static/images/print_layouts/exporting_maps.png
    :alt: exporting_maps

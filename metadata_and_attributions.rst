@@ -1,13 +1,14 @@
-About the data
-==============
+About the Dorset cadastral dataset
+==================================
 
-The Dorset cadastral data - Spatial Reference System
-----------------------------------------------------
+Spatial Reference System
+------------------------
 
 All data is supplied in GDA94 / Map Grid of Australia Zone 55
 
-The Dorset cadastral data - Licensing
--------------------------------------
+License
+-------
 
 ..raw:: html
-        src="_static/cc_license.html"
+
+  src="_/static/cc_license.html"
