@@ -11,4 +11,4 @@ License
 
 ..raw:: html
 
-  src="_/static/cc_license.html"
+  :file: _/static/cc_license.html
