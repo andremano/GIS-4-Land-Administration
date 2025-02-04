@@ -10,7 +10,7 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
+import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import sphinx_rtd_theme
@@ -85,6 +85,13 @@ for file in link_file:
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# Set the output directory for Sphinx
+if os.environ.get('READTHEDOCS') == 'True':
+    html_dir = os.path.join(os.environ.get('READTHEDOCS_OUTPUT'), 'html')
+else:
+    html_dir = '_build/html'  # Default local build directory
+
 
 # Configure paper size, font size, preamble options, etc.
 latex_elements = {
