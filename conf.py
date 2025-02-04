@@ -88,13 +88,13 @@ html_static_path = ['_static']
 
 # Set the output directory for Sphinx
 # Set the output directory for Sphinx
-if os.environ.get('READTHEDOCS') == 'True':
-    html_output_dir = os.path.join(os.environ.get('READTHEDOCS_OUTPUT'), 'html')
-else:
-    html_output_dir = '_build/html'  # Default local build directory
+#if os.environ.get('READTHEDOCS') == 'True':
+ #   html_output_dir = os.path.join(os.environ.get('READTHEDOCS_OUTPUT'), 'html')
+#else:
+ #   html_output_dir = '_build/html'  # Default local build directory
 
 # Ensure the output directory is used
-html_output_dir = os.environ.get('READTHEDOCS_OUTPUT', '_build/html')
+#html_output_dir = os.environ.get('READTHEDOCS_OUTPUT', '_build/html')
 
 
 # Configure paper size, font size, preamble options, etc.
