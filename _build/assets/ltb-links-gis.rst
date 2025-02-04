@@ -102,4 +102,3 @@
 
 .. _Visualization: https://ltb.itc.utwente.nl/page/481/concept/78703
 .. _Map: https://ltb.itc.utwente.nl/page/481/concept/78701
-

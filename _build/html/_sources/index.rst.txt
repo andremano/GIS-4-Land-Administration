@@ -25,6 +25,7 @@ Welcome to GIS 4 Land Administration exercises
    :caption: Appendices
 
    gis-formats
+   metadata_and_attributions
 
 Indices and tables
 ==================

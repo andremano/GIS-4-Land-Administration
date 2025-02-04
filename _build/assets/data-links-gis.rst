@@ -12,6 +12,3 @@
 .. _raster_analysis:        https://canvas.utwente.nl/files/1755515/download?download_frd=1
 .. _vector_analysis:        https://canvas.utwente.nl/files/1755516/download?download_frd=1
 .. _visualization:          https://canvas.utwente.nl/files/1755517/download?download_frd=1
-
-
-

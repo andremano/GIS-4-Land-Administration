@@ -18,8 +18,8 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'GIS for Land Administration'
-copyright = '2020, Andre Mano'
-author = 'Andre Mano'
+copyright = '2020, Andre da Silva Mano'
+author = 'Andre da Silva Mano'
 
 # The full version, including alpha/beta/rc tags
 release = '1'
