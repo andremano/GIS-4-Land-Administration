@@ -85,11 +85,7 @@ for file in link_file:
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-# Set the output directory for Sphinx
-if os.environ.get('READTHEDOCS') == 'True':
-    html_output_dir = os.path.join(os.environ.get('READTHEDOCS_OUTPUT'), 'html')
-else:
-    html_output_dir = '_build/html'  # Default local build directory
+
 
 
 # Configure paper size, font size, preamble options, etc.
