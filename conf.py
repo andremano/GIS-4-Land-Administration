@@ -67,8 +67,8 @@ html_theme = "sphinx_rtd_theme"
 
 ###########################################################
 # Target link-files
-link_file = ['_build/assets/ltb-links-gis.rst',
-            '_build/assets/data-links-gis.rst'
+link_file = ['_static/assets/ltb-links-gis.rst',
+            '_static/assets/data-links-gis.rst'
             ]
 
 # Allows storing external links in separated rst
