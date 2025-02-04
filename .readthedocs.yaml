@@ -18,8 +18,8 @@ build:
 sphinx:
   configuration: conf.py
   # You can configure Sphinx to use a different builder, for instance use the dirhtml builder for simpler URLs
-  builder: "dirhtml"
-  output_dir: $READTHEDOCS_OUTPUT/html
+ # builder: "dirhtml"
+  #output_dir: $READTHEDOCS_OUTPUT/html
   # fail_on_warning: true
 
 # Optionally build your docs in additional formats such as PDF and ePub
