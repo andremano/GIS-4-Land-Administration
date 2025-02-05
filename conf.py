@@ -13,7 +13,7 @@ release = '1'
 import os
 import sys
 import sphinx_rtd_theme
-# sphinx_outputdir = "_build/html"
+#sphinx_outputdir = "_build/html"
 sys.path.append(os.path.abspath("./_ext"))
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
