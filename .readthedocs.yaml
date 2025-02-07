@@ -18,7 +18,7 @@ build:
 
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
-  configuration: conf.py
+  configuration: source/conf.py
   #outputdir: $READTHEDOCS_OUTPUT/html
   # You can configure Sphinx to use a different builder, for instance use the dirhtml builder for simpler URLs
   # builder: html
@@ -28,6 +28,7 @@ sphinx:
 formats:
   - pdf
   - epub
+  - html
 
 # Optional but recommended, declare the Python requirements required
 # to build your documentation
